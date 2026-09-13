@@ -69,21 +69,21 @@ export const MEDIA_ELEMENTS = {
 };
 
 export const FILE_ICONS = {
-  pdf: "fa-file-pdf-o text-danger",
-  doc: "fa-file-word-o text-primary",
-  docx: "fa-file-word-o text-primary",
-  xls:  "fa-file-excel-o text-success",
-  xlsx: "fa-file-excel-o text-success",
-  csv: "fa-file-csv-o text-success",
-  ppt: "fa-file-powerpoint-o text-warning",
-  pptx: "fa-file-powerpoint-o text-warning",
-  txt: "fa-file-text-o text-secondary",
-  zip: "fa-file-zipper-o text-info",
-  rar: "fa-file-zipper-o text-info",
-  mp4: "fa-file-video-o text-info",
-  mp3: "fa-file-audio-o text-info",
-  svg: "fa-file-image-o text-warning",
-  jpg: "fa-file-image-o text-primary",
-  png: "fa-file-image-o text-primary",
-  jpeg: "fa-file-image-o text-primary"
+  pdf: "fa-file-pdf text-danger",
+  doc: "fa-file-word text-primary",
+  docx: "fa-file-word text-primary",
+  xls:  "fa-file-excel text-success",
+  xlsx: "fa-file-excel text-success",
+  csv: "fa-file-csv text-success",
+  ppt: "fa-file-powerpoint text-warning",
+  pptx: "fa-file-powerpoint text-warning",
+  txt: "fa-file-text text-secondary",
+  zip: "fa-file-zipper text-info",
+  rar: "fa-file-zipper text-info",
+  mp4: "fa-file-video text-info",
+  mp3: "fa-file-audio text-info",
+  svg: "fa-file-image text-warning",
+  jpg: "fa-file-image text-primary",
+  png: "fa-file-image text-primary",
+  jpeg: "fa-file-image text-primary"
 };

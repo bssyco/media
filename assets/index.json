@@ -1,0 +1,109 @@
+{
+    "files": [
+        {
+            "url": "/assets/sample.pdf",
+            "name": "sample.pdf",
+            "type": "pdf",
+            "size": "1200",
+            "modified": "2026-01-01"
+        },
+        {
+            "url": "/assets/1.jpg",
+            "type": "image",
+            "size": "1200",
+            "modified": "2026-01-01"
+        },
+        {
+            "url": "/assets/2.jpg",
+            "type": "image",
+            "size": "1200",
+            "modified": "2026-02-01"
+        },
+        {
+            "url": "/assets/3.jpg",
+            "type": "image",
+            "size": "1200",
+            "modified": "2026-03-01"
+        },
+        {
+            "url": "/assets/4.jpg",
+            "type": "image",
+            "size": "1200",
+            "modified": "2026-04-01"
+        },
+        {
+            "url": "/assets/5.jpg",
+            "type": "image",
+            "size": "1200",
+            "modified": "2026-05-01"
+        },
+        {
+            "url": "/assets/6.jpg",
+            "type": "image",
+            "size": "1200",
+            "modified": "2026-06-01"
+        },
+        {
+            "url": "/assets/7.jpg",
+            "type": "image",
+            "size": "1200",
+            "modified": "2026-07-01"
+        },
+        {
+            "url": "/assets/8.jpg",
+            "type": "image",
+            "size": "1200",
+            "modified": "2026-08-01"
+        },
+        {
+            "url": "/assets/9.jpg",
+            "type": "image",
+            "size": "1200",
+            "modified": "2026-09-01"
+        },
+        {
+            "url": "/assets/10.jpg",
+            "type": "image",
+            "size": "1200",
+            "modified": "2026-10-01"
+        },
+        {
+            "url": "/assets/11.jpg",
+            "type": "image",
+            "size": "1200",
+            "modified": "2026-11-01"
+        },
+        {
+            "url": "/assets/12.jpg",
+            "type": "image",
+            "size": "1200",
+            "modified": "2026-12-01"
+        },
+        {
+            "url": "/assets/13.jpg",
+            "type": "image",
+            "size": "1200",
+            "modified": "2026-01-01"
+        },
+        {
+            "url": "/assets/14.jpg",
+            "type": "image",
+            "size": "1200",
+            "modified": "2026-02-01"
+        },
+        {
+            "url": "/assets/15.jpg",
+            "type": "image",
+            "size": "1200",
+            "modified": "2026-03-01"
+        }
+    ],
+    "total": 16,
+    "page": 1,
+    "pages": 1,
+    "folders": 
+    [
+        "Images",
+        "Pdf"
+    ]
+}

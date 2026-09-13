@@ -79,23 +79,23 @@
     PAGE: ".media-new-page-btn",
     SEARCH: ".media-new-search"};
   const FILE_ICONS = {
-    pdf: "fa-file-pdf-o text-danger",
-    doc: "fa-file-word-o text-primary",
-    docx: "fa-file-word-o text-primary",
-    xls: "fa-file-excel-o text-success",
-    xlsx: "fa-file-excel-o text-success",
-    csv: "fa-file-csv-o text-success",
-    ppt: "fa-file-powerpoint-o text-warning",
-    pptx: "fa-file-powerpoint-o text-warning",
-    txt: "fa-file-text-o text-secondary",
-    zip: "fa-file-zipper-o text-info",
-    rar: "fa-file-zipper-o text-info",
-    mp4: "fa-file-video-o text-info",
-    mp3: "fa-file-audio-o text-info",
-    svg: "fa-file-image-o text-warning",
-    jpg: "fa-file-image-o text-primary",
-    png: "fa-file-image-o text-primary",
-    jpeg: "fa-file-image-o text-primary"
+    pdf: "fa-file-pdf text-danger",
+    doc: "fa-file-word text-primary",
+    docx: "fa-file-word text-primary",
+    xls: "fa-file-excel text-success",
+    xlsx: "fa-file-excel text-success",
+    csv: "fa-file-csv text-success",
+    ppt: "fa-file-powerpoint text-warning",
+    pptx: "fa-file-powerpoint text-warning",
+    txt: "fa-file-text text-secondary",
+    zip: "fa-file-zipper text-info",
+    rar: "fa-file-zipper text-info",
+    mp4: "fa-file-video text-info",
+    mp3: "fa-file-audio text-info",
+    svg: "fa-file-image text-warning",
+    jpg: "fa-file-image text-primary",
+    png: "fa-file-image text-primary",
+    jpeg: "fa-file-image text-primary"
   };
 
   const TRANSITION_END = 'transitionend';
@@ -233,7 +233,7 @@
     },
     fileIcon(name) {
       var ext = (name || "").split(".").pop().toLowerCase();
-      return FILE_ICONS[ext] || "fa-file-o text-secondary";
+      return FILE_ICONS[ext] || "fa-file text-secondary";
     },
     formatSize(bytes) {
       if (bytes < 1024) return bytes + " B";
@@ -643,7 +643,7 @@
     return this;
   }
 
-  const mediaTemplate = "<div class=\"media\">\r\n    <textarea class=\"media-model\" name=\"{ControlName}\">\r\n      []\r\n      </textarea>\r\n    <div class=\"media-list\">\r\n    </div>\r\n    <div class=\"media-toolbox\">\r\n        <div>\r\n            <button class=\"btn btn-light media-add\">\r\n                <i class=\"fa fa-plus\"></i>\r\n                {AddTitle}\r\n            </button>\r\n            <button class=\"btn btn-light media-clear\">\r\n                <i class=\"fa fa-trash\"></i>\r\n                {ClearTitle}\r\n            </button>\r\n        </div>\r\n    </div>\r\n</div>";
+  const mediaTemplate = "<div class=\"media\">\r\n    <textarea class=\"media-model\" name=\"{ControlName}\">\r\n      []\r\n      </textarea>\r\n    <div class=\"media-list\">\r\n    </div>\r\n    <div class=\"media-toolbox\">\r\n        <div>\r\n            <button class=\"btn btn-light media-add\">\r\n                <i class=\"fa fa-add\"></i>\r\n                {AddTitle}\r\n            </button>\r\n            <button class=\"btn btn-light media-clear\">\r\n                <i class=\"fa fa-trash\"></i>\r\n                {ClearTitle}\r\n            </button>\r\n        </div>\r\n    </div>\r\n</div>";
   const mediaImageItemTemplate = "<div class=\"media-item\">\r\n    <button type=\"button\" class=\"close media-remove\" aria-label=\"Close\" title=\"Remove\">\r\n        <span aria-hidden=\"true\">×</span>\r\n    </button>\r\n    <a href=\"#\" class=\"media-item-link\" style=\"background-image: url('{url}')\"></a>\r\n</div>";
   const mediaFileItemTemplate = "<div class=\"media-item\">\r\n    <button type=\"button\" class=\"close media-remove\" aria-label=\"Close\" title=\"Remove\">\r\n        <span aria-hidden=\"true\">×</span>\r\n    </button>\r\n    <a href=\"#\" class=\"media-item-link media-item-icon\">\r\n        <div>\r\n            <i class=\"fa {icon} \"></i>\r\n        </div>\r\n        <div class=\"media-item-name\">\r\n            {name}\r\n        </div>        \r\n    </a>\r\n</div>";
   class Media {

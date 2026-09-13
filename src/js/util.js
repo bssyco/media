@@ -165,7 +165,7 @@ const Util = {
 
   fileIcon(name) {
     var ext = (name || "").split(".").pop().toLowerCase();
-    return FILE_ICONS[ext] || "fa-file-o text-secondary";
+    return FILE_ICONS[ext] || "fa-file text-secondary";
   },
 
   formatSize(bytes) {

@@ -1,0 +1,11 @@
+@use 'vendor/variables';
+
+$media-height: 100%;
+$media-border-width: variables.$input-border-width;
+$media-border-color: variables.$input-border-color;
+$media-border-radius: variables.$input-border-radius;
+$media-box-shadow: variables.$input-box-shadow;
+$media-padding-x: variables.$input-padding-x;
+$media-padding-y: variables.$input-padding-x;
+
+$media-image-transition: opacity .3s ease;

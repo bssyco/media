@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="../node_modules/font-awesome/css/font-awesome.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.16.0/themes/prism.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../dist/css/media.css">
+
+    <title>BSSYCO Media Control</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <h1><a href="https://bssyco.com?lang=en">Bssyco</a> Media Javascript Control</h1>
+                <hr />
+                <p class="lead">
+                    Bssyco Media is a fast javascript control for selecting files.
+                    Media control fetches files from server and displayes on form.
+                </p>
+                <section>
+                    <h2>Examples</h2>
+                    <article>
+                        <section>
+                            <h3>Media Control</h3>
+                            <article>
+                                <div class="example">
+                                    <div class="example-preview" data-hl="html">
+                                        <div class="form-group">
+                                            <label>Images Library</label>
+                                            <div class="image-control"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </section>
+                        <section>
+                            <h3>Multi Selection Option</h3>
+
+                            <article>
+                                <div class="example">
+                                    <div class="example-preview" data-hl="html">
+                                        <div class="form-group">
+                                            <label>Multi Select Media</label>
+                                            <div class="multi-media-control"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </article>
+                        </section>
+                    </article>
+                </section>
+                <p>Images are taken from <a href="https://unsplash.com/" target="_blank">unsplash.com</a></p>
+                <p>For more information, visit <a href="https://bssyco.com?lang=en">BSSYCO</a></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.16.0/prism.min.js" data-manual></script>
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../node_modules/popper.js/dist/popper.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="js/source.js"></script>
+    <script src="../dist/js/media.js"></script>
+
+    <script>
+
+        $(document).ready(function () {
+
+            $('.image-control').media({
+                name: "images",
+                apiUrl: "/assets/images/lib-1/index.json",
+                perPage: 10,
+                title: "Media Library",
+                //   uploaderButtonText: "Library",
+                //   uploaderButtonIcon: "bi bi-collection",
+            }, this);
+
+            $('.multi-media-control').media({
+                name: "multi-media",
+                multiple: true,
+                apiUrl: "/assets/images/lib-1/index.json",
+                perPage: 10,
+                title: "Multi-Media Library",
+            }, this);
+
+            // $(".media").media({ 
+            //     apiUrl: "/assets/images/lib-1/index.json", 
+            //     label: "Single Select" 
+            // });
+
+            // $(".media").media({ 
+            //     apiUrl: "/assets/images/lib-1/index.json", 
+            //     label: "Multi Select" ,
+            //     multiple: true
+            // });
+
+            // $(".media").media({
+            //     apiUrl: "/assets/images/lib-1/index.json",
+            //     label: "Folder: products",
+            //     folder: "products"
+            // });
+
+            // $(".media").media({
+            //     apiUrl: "/assets/images/lib-1/index.json",
+            //     label: "Search: invoice",
+            //     search: "invoice"
+            // });
+
+            // $(".media").media({
+            //     apiUrl: "/assets/images/lib-1/index.json",
+            //     label: "Pagination View",
+            //     folder: ""
+            // });
+
+            $('.media').on('add.bs.media added.bs.media change.bs.media delete.bs.media deleted.bs.media clear.bs.media cleared.bs.media', function (e) {
+                console.log(e.type)
+            })
+        });
+    </script>
+</body>
+
+</html>

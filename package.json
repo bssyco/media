@@ -1,0 +1,60 @@
+{
+  "name": "@bssyco/media",
+  "version": "1.0.0",
+  "description": "Bssyco Media Javascript Control",
+  "main": "./src/js/main.js",
+  "keywords": [],
+  "author": "Parviz Taghavi <parviz.taghavi@bssyco.com> (https://bssyco.com?lang=en)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bssyco/media.git"
+  },
+  "bugs": {
+    "url": "https://github.com/bssyco/media/issues"
+  },
+  "homepage": "https://github.com/bssyco/media#readme",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "js": "npm run js-compile && npm run js-minify",
+    "js-compile": "rollup -c build/rollup.config.js --sourcemap --bundleConfigAsCjs",
+    "js-minify": "uglifyjs --compress typeofs=false --mangle --comments \"/^!/\" --source-map \"content='dist/js/media.js.map',includeSources,url='media.min.js.map'\" --output dist/js/media.min.js dist/js/media.js",
+    "css": "npm run css-compile",
+    "css-compile": "sass src/scss/bootstrap.scss dist/css/media.css",
+    "css-prefix": "postcss --config build/postcss.config.js --replace \"dist/css/*.css\" \"!dist/css/*.min.css\"",
+    "build": "npm run js && npm run css",
+    "watch": "rollup -c build/rollup.config.js -w",
+    "dev": "npm-run-all --parallel start watch"
+  },
+  "dependencies": {
+    "@babel/preset-env": "^8.0.5",
+    "@rollup/plugin-babel": "^7.1.0",
+    "@rollup/plugin-commonjs": "^29.0.3",
+    "@rollup/plugin-html": "^2.0.0",
+    "@rollup/plugin-json": "^6.1.0",
+    "@rollup/plugin-node-resolve": "^16.0.3",
+    "@rollup/plugin-terser": "^1.0.0",
+    "@rollup/plugin-url": "^8.0.2",
+    "@rollup/plugin-virtual": "^3.0.2",
+    "autoprefixer": "^10.6.0",
+    "babel-core": "^6.26.3",
+    "babel-plugin-external-helpers": "^6.22.0",
+    "date-fns": "^4.4.0",
+    "font-awesome": "^4.7.0",
+    "grunt": "^1.6.3",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-run": "^0.8.1",
+    "jquery": "^4.0.0",
+    "jqueryui": "^1.11.1",
+    "postcss-cli": "^12.0.0",
+    "rollup": "^4.63.2",
+    "sass": "^1.104.1",
+    "serve": "^14.2.6",
+    "uglify-js": "^3.19.3",
+    "babel-plugin-transform-html-import-to-string": "^2.0.0",
+    "string-template": "^0.2.1"
+  }
+}

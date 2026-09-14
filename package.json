@@ -1,10 +1,20 @@
 {
   "name": "@bssyco/media",
+  "title": "media",
   "version": "1.0.0",
-  "description": "Bssyco Media Javascript Control",
+  "description": "A responsive and fast javascript control for selecting documents and files from server.",
   "main": "./src/js/main.js",
-  "keywords": [],
-  "author": "Parviz Taghavi <parviz.taghavi@bssyco.com> (https://bssyco.com?lang=en)",
+  "keywords": [
+    "media",
+    "javascript",
+    "responsive",
+    "control"
+  ],
+  "author": {
+    "name": "Parviz Taghavi",
+    "email": "parviz.taghavi@bssyco.com",
+    "url": "https://bssyco.com?lang=en"
+  },
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -13,9 +23,16 @@
   "bugs": {
     "url": "https://github.com/bssyco/media/issues"
   },
-  "homepage": "https://github.com/bssyco/media#readme",
+  "homepage": "https://media.bssyco.com",
   "directories": {
     "doc": "docs"
+  },
+  "publishConfig": {
+    "ignore": [
+      ".github/workflows",
+      "CONTRIBUTING.md",
+      "test/list-exports"
+    ]
   },
   "scripts": {
     "js": "npm run js-compile && npm run js-minify",
@@ -26,7 +43,8 @@
     "css-prefix": "postcss --config build/postcss.config.js --replace \"dist/css/*.css\" \"!dist/css/*.min.css\"",
     "build": "npm run js && npm run css",
     "watch": "rollup -c build/rollup.config.js -w",
-    "dev": "npm-run-all --parallel start watch"
+    "dev": "npm-run-all --parallel start watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
     "@babel/preset-env": "^8.0.5",

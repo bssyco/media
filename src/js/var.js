@@ -1,6 +1,6 @@
 export const MEDIA_NAME = "media";
 export const MEDIA_FILE_NAME = "media.js";
-export const MEDIA_VERSION = "1.0.0";
+export const MEDIA_VERSION = "1.0.1";
 export const MEDIA_DATA_KEY = "bs.media";
 export const MEDIA_EVENT_KEY = `.${MEDIA_DATA_KEY}`;
 export const MEDIA_DATA_API_KEY = ".data-api";

@@ -1,7 +1,7 @@
 {
   "name": "@bssyco/media",
   "title": "media",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A responsive and fast javascript control for selecting documents and files from server.",
   "main": "./src/js/main.js",
   "keywords": [
@@ -47,6 +47,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
+    "@babel/core": "^7.29.7",
     "@babel/preset-env": "^8.0.5",
     "@rollup/plugin-babel": "^7.1.0",
     "@rollup/plugin-commonjs": "^29.0.3",
@@ -58,6 +59,7 @@
     "@rollup/plugin-virtual": "^3.0.2",
     "autoprefixer": "^10.6.0",
     "babel-plugin-external-helpers": "^6.22.0",
+    "babel-plugin-transform-html-import-to-string": "^2.0.0",
     "date-fns": "^4.4.0",
     "font-awesome": "^4.7.0",
     "grunt": "^1.6.3",
@@ -69,9 +71,7 @@
     "postcss-cli": "^12.0.0",
     "rollup": "^4.63.2",
     "sass": "^1.104.1",
-    "serve": "^14.2.6",
-    "uglify-js": "^3.19.3",
-    "babel-plugin-transform-html-import-to-string": "^2.0.0",
-    "string-template": "^0.2.1"
+    "string-template": "^1.0.0",
+    "uglify-js": "^3.19.3"
   }
 }
